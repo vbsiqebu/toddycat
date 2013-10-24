@@ -11,8 +11,10 @@ html lang="en"
     = stylesheet_link_tag    "application", media: "all"
   body
     #wrap
-      == render partial: 'layouts/navigation'
-
+      - if current_user
+        == render partial: 'layouts/navigation'
+      - else
+        == render partial: 'layouts/header'
 
       .container
         .page
