@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-Toddycat::Application.config.session_store :cookie_store, key: '_toddycat_session'
+ToddyCat::Application.config.session_store :cookie_store, key: '_ToddyCat_session'

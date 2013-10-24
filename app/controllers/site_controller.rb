@@ -1,13 +1,13 @@
 class SiteController < ApplicationController
-	def index
-		@users = User.all.entries
-	end
+  def index
+    @users = User.all.entries
+  end
 
-	def privacy
+  def privacy
 
-	end
+  end
 
-	def terms
-		
-	end
+  def terms
+    
+  end
 end

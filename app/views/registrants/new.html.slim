@@ -1,0 +1,9 @@
+.container
+	.row
+		.col-lg-4.col-lg-offset-4
+			=form_for @registrant do |f|
+			fieldset
+				legend Add a new registrant
+				.form-group
+					=f.label :email
+					=f.text_field :email, class: "form-control"

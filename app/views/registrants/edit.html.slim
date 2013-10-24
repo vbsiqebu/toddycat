@@ -1,0 +1,15 @@
+.container
+	.row
+		.col-lg-8
+			.pull-right = link_to "Add a Registrant", new_registrant_url
+			h1 Registrants
+	.row
+		.col-lg-8
+			table.table.table-bordered
+				thead
+					-@registrants.each do |registrants|
+						tr
+							td = link_to registrant.id, registrant_url(registrant.id)
+							td = registrant.email
+							td = registrant.expires_at
+							td = 

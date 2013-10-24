@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Toddycat::Application.load_tasks
+ToddyCat::Application.load_tasks
